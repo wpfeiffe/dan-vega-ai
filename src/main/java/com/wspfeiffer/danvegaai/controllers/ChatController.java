@@ -14,8 +14,8 @@ public class ChatController {
         this.chatClient = builder.build();
     }
 
-    @GetMapping("/dad-jokes")
-    public String generate(@RequestParam(value = "message", defaultValue = "Tell me a data joke") String message) {
+    @GetMapping("/chatgpt")
+    public String generate(@RequestParam(value = "prompt", defaultValue = "Tell me a dad joke") String message) {
 
         ChatClient.CallResponseSpec callResponseSpec = chatClient.prompt()
                 .user(message).call();

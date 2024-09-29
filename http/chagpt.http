@@ -14,6 +14,11 @@ Authorization: Bearer {{OPENAI_API_KEY}}
 ###
 ###
 ###
-GET http://localhost:8080/dad-jokes
+GET http://localhost:8080/chatgpt
+
+###
+###
+###
+GET http://localhost:8080/chatgpt?prompt=what is 40 %2B 20
 
 
