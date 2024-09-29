@@ -24,8 +24,8 @@ ext {
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
-    implementation 'org.springframework.ai:spring-ai-azure-openai-spring-boot-starter'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation 'org.springframework.ai:spring-ai-openai-spring-boot-starter'
+    implementation 'org.apache.httpcomponents.client5:httpclient5:5.2.1'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 

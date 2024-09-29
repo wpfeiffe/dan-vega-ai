@@ -1,5 +1,19 @@
-### GET request to example server
-GET https://examples.http-client.intellij.net/get
-    ?generated-in=IntelliJ IDEA
+### chat gpt
+POST https://api.openai.com/v1/chat/completions
+Content-Type: application/json
+Authorization: Bearer {{OPENAI_API_KEY}}
+
+{
+  "model": "gpt-4o-mini",
+  "messages": [{
+    "role": "user",
+    "content": "Tell me a Data Joke about computers?"
+  }]
+}
 
 ###
+###
+###
+GET http://localhost:8080/dad-jokes
+
+
